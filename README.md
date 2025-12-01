@@ -62,14 +62,14 @@ FlowOne targets 3 main audience segments:
 
 ## 📚 Related Documentation
 
-- [**ARCHITECTURE.md**](./ARCHITECTURE.md) - System architecture and technical design
-- [**INSTALLATION.md**](./INSTALLATION.md) - Installation and configuration guide
-- [**ROADMAP.md**](./ROADMAP.md) - Development roadmap and MVP features
-- [**TECH_STACK.md**](./TECH_STACK.md) - Technology stack details
-- [**SECURITY.md**](./SECURITY.md) - Security strategy
-- [**MIGRATION.md**](./MIGRATION.md) - WordPress migration guide
-- [**BUSINESS.md**](./BUSINESS.md) - Business model and go-to-market
-- [**RISKS.md**](./RISKS.md) - Risk analysis and solutions
+- [**ARCHITECTURE.md**](./docs/ARCHITECTURE.md) - System architecture and technical design
+- [**INSTALLATION.md**](./docs/INSTALLATION.md) - Installation and configuration guide
+- [**ROADMAP.md**](./docs/ROADMAP.md) - Development roadmap and MVP features
+- [**TECH_STACK.md**](./docs/TECH_STACK.md) - Technology stack details
+- [**SECURITY.md**](./docs/SECURITY.md) - Security strategy
+- [**MIGRATION.md**](./docs/MIGRATION.md) - WordPress migration guide
+- [**BUSINESS.md**](./docs/BUSINESS.md) - Business model and go-to-market
+- [**RISKS.md**](./docs/RISKS.md) - Risk analysis and solutions
 
 ## 🚀 Quick Start
 
@@ -91,7 +91,7 @@ flowone serve
 
 FlowOne is an **open-core** project (Apache 2.0 License). We welcome all contributions from the community!
 
-- 📖 [Contribution Guidelines](./CONTRIBUTING.md)
+- 📖 [Contribution Guidelines](./docs/CONTRIBUTING.md)
 - 💬 [Discord Community](https://discord.gg/flowone)
 - 🐛 [Issue Tracker](https://github.com/flowone/flowone/issues)
 
