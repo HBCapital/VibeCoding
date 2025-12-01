@@ -1,32 +1,32 @@
 # DEV GUIDELINES
 
-## 1. QUY TRÌNH: Think → Data → Code
+## 1. PROCESS: Think → Data → Code
 
-- **Document First:** Không bao giờ gõ code nếu chưa rõ yêu cầu. Phải có luồng đi (Flow) hoặc hình vẽ nháp (Wireframe) trước.
-- **Database Centric:** Dữ liệu là trái tim. Thiết kế Schema (cấu trúc bảng) chuẩn chỉ trước, vì sửa DB đau đớn gấp 10 lần sửa Code.
-- **Scaffolding First:** Dựng khung sườn, thư mục, kết nối thông suốt trước khi đắp thịt (logic chi tiết).
-- **Pragmatic Testing:** Test thông minh, không máy móc. Ưu tiên Unit Test cho các hàm logic quan trọng (tính toán, convert data). UI không cần test quá kỹ.
+- **Document First:** Never write code without clear requirements. Must have a Flow or Wireframe first.
+- **Database Centric:** Data is the heart. Design the Schema (table structure) correctly first, because fixing the DB is 10 times more painful than fixing Code.
+- **Scaffolding First:** Build the skeleton, directory structure, and connections before adding the meat (detailed logic).
+- **Pragmatic Testing:** Test smartly, not mechanically. Prioritize Unit Tests for important logic functions (calculations, data conversion). UI does not need to be tested too heavily.
 
-## 2. NGUYÊN TẮC: Simple & Clean
+## 2. PRINCIPLES: Simple & Clean
 
-- **Vertical Slice Architecture:** Chia code theo **Tính năng (Feature)** thay vì chia theo lớp kỹ thuật (Layer). Tính năng nào ở yên chỗ đó.
-- **KISS (Keep It Simple, Stupid):** Code "ngu" mà dễ đọc > Code "thông minh" mà hại não. Giải pháp đơn giản nhất thường là giải pháp tốt nhất.
-- **DRY (Don't Repeat Yourself):** Thấy copy-paste 2 lần là phải tách hàm. Logic nghiệp vụ chỉ nằm ở 1 chỗ duy nhất.
-- **SOLID (Flexible):** Tuân thủ để code mềm dẻo, nhưng cấm Over-engineering (đẻ ra 10 cái interface cho 1 hàm đơn giản).
+- **Vertical Slice Architecture:** Split code by **Feature** instead of by technical Layer. Keep features self-contained.
+- **KISS (Keep It Simple, Stupid):** "Dumb" readable code > "Smart" brain-damaging code. The simplest solution is usually the best solution.
+- **DRY (Don't Repeat Yourself):** If you copy-paste twice, split it into a function. Business logic should only exist in one place.
+- **SOLID (Flexible):** Follow to keep code flexible, but forbid Over-engineering (creating 10 interfaces for 1 simple function).
 
-## 3. TƯ DUY: Lean & Human
+## 3. MINDSET: Lean & Human
 
-- **LEAN:** Loại bỏ rác. Chỉ làm những gì tạo ra giá trị ngay lập tức.
-- **YAGNI (You Aren't Gonna Need It):** Cấm code đón đầu. Đừng lo chuyện của 2 năm sau. Chỉ code cái cần cho ngày hôm nay.
-- **Code for Humans:** Viết code là để cho người khác đọc. Đặt tên biến rõ nghĩa, comment đầy đủ ở những chỗ logic phức tạp.
+- **LEAN:** Eliminate waste. Only do what creates immediate value.
+- **YAGNI (You Aren't Gonna Need It):** Forbid anticipatory coding. Don't worry about 2 years from now. Only code what is needed for today.
+- **Code for Humans:** Code is for others to read. Name variables clearly, comment fully on complex logic.
 
-## 4. QUY ƯỚC ĐẶT TÊN
+## 4. NAMING CONVENTIONS
 
 - **camelCase:** Javascript/Typescript, Java, JSON keys.
 - **kebab-case:** HTML tags/attributes, CSS classes, URLs, Filenames.
 - **PascalCase:** Class, Component, Interface/Type.
-- **SCREAMING_SNAKE:** Hằng số, Config.
-- **snake_case:** Database (Table/Column) và mọi trường hợp còn lại (Backend variables/functions).
+- **SCREAMING_SNAKE:** Constants, Config.
+- **snake_case:** Database (Table/Column) and everything else (Backend variables/functions).
 
 ## Error Handling
 
