@@ -201,7 +201,7 @@ VibeCoding templates support various project types:
 
 ## 📄 License
 
-This template is licensed under the **Apache 2.0 License** - see [LICENSE](./LICENSE)
+This template is licensed under the **MIT License** - see [LICENSE](./LICENSE)
 
 Projects created using this template can use any license you choose.
 
