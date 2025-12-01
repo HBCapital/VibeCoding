@@ -63,6 +63,20 @@ After receiving the user's project idea, you MUST:
 
 ### Step 1: Gather Project Information
 
+**IMPORTANT INSTRUCTION FOR AI**:
+When asking the following questions, **do not just list the options**. You MUST:
+
+1. **Analyze** the user's project context (from Step 0).
+2. **Provide a recommendation** for the best choice.
+3. **Briefly explain pros/cons** of the options relative to their specific project.
+
+_Example_:
+
+> "For a Real-time Chat App (your project), I recommend **Node.js** over PHP because:
+>
+> - **Node.js**: Excellent for real-time (WebSockets), non-blocking I/O.
+> - **PHP**: Traditional strength is request-response, requires extra setup for real-time."
+
 After the user confirms the feature list, ask the following questions:
 
 #### Basic Information
@@ -473,6 +487,7 @@ Based on user's answers, generate these files:
    ```
 
 2. **If remote repository specified**:
+
    - Verify SSH/HTTPS URL format
    - **Recommend SSH** if user provided HTTPS:
 
@@ -483,6 +498,7 @@ Based on user's answers, generate these files:
 
      Would you like to use SSH instead?
      ```
+
 3. **Add remote and push**:
 
    ```bash

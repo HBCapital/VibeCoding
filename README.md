@@ -40,9 +40,21 @@ VibeCoding provides:
 
 ## 🚀 Quick Start
 
-### Step 1: Use This Template
+### Step 1: Get the Template
 
-Clone or copy this repository to start a new project.
+**Option A: Using Terminal**
+
+```bash
+mkdir ProjectName
+git clone https://github.com/HBCapital/VibeCoding.git
+cd ProjectName
+```
+
+**Option B: Using AI Agent Editors (Antigravity, Windsurf, Cursor)**
+
+1. Open a new empty project window
+2. Ask your agent:
+   > "Clone the VibeCoding repo (https://github.com/HBCapital/VibeCoding) here to start a new project."
 
 ### Step 2: Initialize with AI
 
@@ -90,15 +102,7 @@ These files don't need modification:
 
 ---
 
-## 🔄 How It Works
-
-### For Developers
-
-1. **Copy this template** to start your new project
-2. **Ask AI**: "Please initialize a new project using VibeCoding template"
-3. **Answer questions** about your project (name, tech stack, type, etc.)
-4. **Review** generated documentation files
-5. **Start developing** with complete project setup
+## 🤖 AI Initialization Process
 
 ### For AI Assistants
 
@@ -173,31 +177,6 @@ VibeCoding templates support various project types:
 - PostgreSQL, MySQL/MariaDB
 - MongoDB, Redis
 - SQLite, and more
-
-## 💡 Example Use Case
-
-**Before VibeCoding:**
-
-- Spend hours setting up project structure
-- Inconsistent documentation across projects
-- Forget important files (SECURITY.md, CONTRIBUTING.md)
-- No standardized guidelines
-
-**With VibeCoding:**
-
-- AI asks systematic questions
-- Complete documentation generated in minutes
-- Professional structure from day one
-- Team collaboration standards included
-
-## 🤝 How It Works
-
-1. **AI reads** `PROJECT_INIT.md`
-2. **AI asks** structured questions about your project
-3. **AI processes** `.template.md` files
-4. **AI replaces** `{{PLACEHOLDERS}}` with your answers
-5. **AI creates** final documentation files
-6. **You start** developing with complete project setup
 
 ## 📄 License
 
