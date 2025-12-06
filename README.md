@@ -57,28 +57,35 @@ Testing, debugging, database design, UI/UX, DevOps, and more
 
 ## 🚀 Quick Start
 
-### 1. Install VSCode Extension
+### 1. Clone Repository with Submodules
 
 ```bash
-# Clone repository
-git clone https://github.com/HBCapital/VibeCoding
+# Clone repository with submodules
+git clone --recursive https://github.com/HBCapital/VibeCoding
 cd VibeKit
 
-# Install VSCode extension
-cd vscode
+# Or if already cloned, initialize submodules
+git submodule update --init --recursive
+```
+
+### 2. Install VSCode Extension
+
+```bash
+# Navigate to VSCode extension
+cd extensions/vscode
 npm install
 npm run compile
 ```
 
 Press `F5` in VSCode to launch Extension Development Host.
 
-### 2. Configure Repository
+### 3. Configure Repository
 
 1. Open Command Palette (`Ctrl+Shift+P`)
 2. Run: `VibeKit: Configure Git Repository`
 3. Enter: `https://github.com/HBCapital/VibeCoding`
 
-### 3. Sync Commands
+### 4. Sync Commands
 
 Click VibeKit icon in status bar or run:
 
@@ -86,7 +93,7 @@ Click VibeKit icon in status bar or run:
 VibeKit: Sync Rules & Agents
 ```
 
-### 4. Start Using
+### 5. Start Using
 
 In your AI editor, type:
 
@@ -122,12 +129,15 @@ VibeKit/
 ├── agents/             # 47 slash commands
 ├── rules/              # Global rules (vibekit.md)
 ├── docs/               # Documentation
-├── extensions/         # Editor extensions
-│   ├── vscode/        # VSCode extension
-│   └── zed/           # Zed extension (coming soon)
+├── extensions/         # Editor extensions (Git submodules)
+│   ├── vscode/        # VSCode extension → VibeKit-vscode repo
+│   └── zed/           # Zed extension → VibeKit-zed repo
+├── .gitmodules         # Submodule configuration
 ├── package.json        # Monorepo config
 └── README.md          # This file
 ```
+
+> **Note**: Extensions are Git submodules. Use `git clone --recursive` or `git submodule update --init --recursive`
 
 ## 🎨 Supported Editors
 
@@ -149,7 +159,7 @@ VibeKit/
 ## 📖 Documentation
 
 - [Command Reference](./docs/COMMANDS.md) - All 47 commands
-- [VSCode Extension](./vscode/README.md) - Extension guide
+- [VSCode Extension](./extensions/vscode/README.md) - Extension guide
 - [Development Guidelines](./docs/GUIDELINE.md) - Coding standards
 - [Architecture](./docs/ARCHITECTURE.md) - System design
 - [Monorepo Guide](./MONOREPO.md) - Project management
